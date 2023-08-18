@@ -79,7 +79,7 @@ export const TodoItem = (props: { todo : Todo }) => {
                                     <span>{todo.text}</span>
                                 </div>
                                 <div>
-                                    <span className="icon">{xmark}</span>    
+                                    <span className="icon">Status {xmark}</span>    
                                 </div>
                             </div>
                             ) : (
@@ -88,7 +88,7 @@ export const TodoItem = (props: { todo : Todo }) => {
                                         <span className="text-completed">{todo.text}</span>
                                     </div>
                                     <div>
-                                        <span className="icon">{check}</span>
+                                        <span className="icon">Status {check}</span>
                                     </div>
                                 </div>
                             )}
