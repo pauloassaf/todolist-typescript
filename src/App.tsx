@@ -1,4 +1,3 @@
-import { useState, useRef } from 'react'
 import AddTodo from './components/AddTodo';
 import TodoList from './components/TodoList';
 import {Toaster} from 'react-hot-toast';
