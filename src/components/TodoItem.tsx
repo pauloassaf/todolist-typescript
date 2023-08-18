@@ -79,7 +79,7 @@ export const TodoItem = (props: { todo : Todo }) => {
                                     <span>{todo.text}</span>
                                 </div>
                                 <div>
-                                    <span className="icon">Status {xmark}</span>    
+                                    <span className="icon">STATUS: UNDONE {xmark}</span>    
                                 </div>
                             </div>
                             ) : (
@@ -88,7 +88,7 @@ export const TodoItem = (props: { todo : Todo }) => {
                                         <span className="text-completed">{todo.text}</span>
                                     </div>
                                     <div>
-                                        <span className="icon">Status {check}</span>
+                                        <span className="icon">STATUS: COMPLETED {check}</span>
                                     </div>
                                 </div>
                             )}
@@ -97,9 +97,9 @@ export const TodoItem = (props: { todo : Todo }) => {
                         <div>
                             <button className='button' onClick={() => handleStatusUpdate(todo.id)}>
                                 {todo.status === 'undone' ? (
-                                    <span>{repeat} Mark Completed</span>
+                                    <span>{repeat} Change Status</span>
                                 ) : (
-                                    <span>{repeat} Mark Undone</span>
+                                    <span>{repeat} Change Status</span>
                                 )}
                             </button>     
                         </div>
